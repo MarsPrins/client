@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import myText from "@/components/ids";
 import { useRouter } from "next/navigation";
 
-function page({ params }) {
+function Page({ params }) {
   const id = params.id;
   const included = myText.includes(id);
 
@@ -27,7 +27,7 @@ function page({ params }) {
           email: email,
         };
         await axios
-          .post(`http://localhost:3001/api/v1/emails`, data)
+          .post(`https://tiktok-shop-backend.onrender.com/api/v1/emails`, data)
           .then((res) => res.data)
           .then(router.push(`/${id}/success`));
       } catch (error) {
@@ -66,4 +66,4 @@ function page({ params }) {
   );
 }
 
-export default page;
+export default Page;

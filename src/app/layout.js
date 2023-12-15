@@ -1,7 +1,7 @@
 import "@/styles/globals.scss";
 
 export const metadata = {
-  title: "BLANK.",
+  title: "Join now.",
   description:
     "You know you can't wait so join the waitlist to find out right when it comes out.",
 };

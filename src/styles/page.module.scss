@@ -17,10 +17,11 @@
       margin-bottom: 3rem;
       .logo {
         font-family: $titleFont;
-        font-size: 60px;
+        font-size: 40px;
       }
       p {
         line-height: 2ch;
+        max-width: 90vw;
       }
     }
     form {

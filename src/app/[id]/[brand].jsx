@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 
 function Page({ params }) {
   const id = params.id;
+  const brand = params.brand;
   const included = myText.includes(id);
 
   const router = useRouter();
@@ -42,7 +43,7 @@ function Page({ params }) {
     <div className={s.container}>
       <div className={s.content}>
         <div className={s.branding}>
-          <span className={s.logo}>BLANK.</span>
+          <span className={s.logo}>{brand}.</span>
           <p>
             Be one of the first and get access to the exclusive early access.
           </p>

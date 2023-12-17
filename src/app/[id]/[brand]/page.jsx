@@ -30,7 +30,7 @@ function Page({ params }) {
         await axios
           .post(`https://tiktok-shop-backend.onrender.com/api/v1/emails`, data)
           .then((res) => res.data)
-          .then(router.push(`/${id}/success`));
+          .then(router.push(`/success`));
       } catch (error) {
         console.log(error);
       }
